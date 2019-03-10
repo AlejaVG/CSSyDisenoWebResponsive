@@ -1,0 +1,196 @@
+body{
+	background-color:#02010a;
+	font-family: 'Dancing Script', cursive;
+}
+
+.contenido {
+	margin:0;
+	padding: 0;
+	width: 100%;
+
+}
+.contenido{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	justify-content: center;
+
+}
+
+.contenido div{
+	box-sizing: border-box;
+	max-width: 900px;
+	text-align: right;
+
+}
+#cabecera{
+	background-color: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+	color: white;
+	text-shadow: 2px 2px 2px #02010a;
+
+}
+h1{
+	float: left;
+}
+nav a{
+	float: right;
+	color: white;
+}
+	nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		padding-right: 0px;
+	}
+
+		nav ul li {
+			display: inline-block;
+			line-height: 80px;
+		}
+
+			nav ul li a {
+				display: block;
+				padding: 0 10px;
+				text-decoration: underline;
+			}
+
+				nav ul li a:hover {
+					text-decoration: none;
+				}
+
+.ImagenCentral img{
+	margin-left: auto;
+		margin-right: auto;
+		display: block;
+		align-self: center;
+		box-shadow: 2px -2px 2px #02010a;
+			background-image:#82c3a6;
+}
+
+/* .imagen2izq img >div{
+	margin-left: auto;
+		margin-right: auto;
+		padding: 20px;
+		display: block;
+		top:30%;
+		align-self: center;
+	width:50%;
+
+}
+
+.imagen2dere img >div{
+	margin-left: auto;
+		margin-right: auto;
+		padding: 20px;
+		display: block;
+		top:30%;
+		align-self: center;
+		width:50%
+
+} */
+
+.ImagenCentral {
+	background-color: #82c3a6;
+
+}
+.ImagenSecundaria{
+	background-color: #d5c75f;
+}
+.ImagenDerecha img{
+
+	border-radius: 1px;
+	width:50%;
+	float: right;
+	margin-left: 0;
+
+}
+.ImagenIzquierda img{
+
+  border-radius: 1px;
+	width:50%;
+	float: left;
+	margin-right: 0;
+}
+.dcabecera, .ImagenCentral{
+	width: 100%;
+	flex-direction: column;
+}
+
+@media (min-width: 900px) {
+
+	.ImagenCentral {
+		width: 100%;
+	}
+	.ImagenCentral img{
+		margin-left: auto;
+			margin-right: auto;
+			top:20%;
+			padding: 10px;
+			display: block;
+			align-self: center;
+
+	}
+
+	/* .imagen2izq img, .imagen2dere img {
+		width: 50%;
+	} */
+
+	.contenido {
+	max-width: 900px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+.contenido{
+	display: -webkit-flex;
+   display: flex;
+}
+
+.ImagenSecundaria {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+
+}
+
+.ImagenSecundaria > div {
+	width: 50%;
+	padding: 10px;
+
+}
+
+.ImagenSecundaria a {
+float: center;
+
+}
+
+
+.Imagen img{
+	margin-left: auto;
+		margin-right: auto;
+		top:30%;
+		padding: 10px;
+		display: flex;
+		align-self: center;
+		box-shadow: 2px -2px 2px #02010a;
+
+}
+.footer{
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+	background-color:#C6d5c5;
+}
+
+.footer >div{
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 25%;
+}
