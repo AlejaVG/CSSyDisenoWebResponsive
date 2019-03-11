@@ -5,6 +5,7 @@ figure {
 }
 figure img {
     vertical-align: top;
+		box-shadow: 2px -2px 20px 1px #02010a;
 }
 figure figcaption {
     border: 0px dotted blue;
@@ -15,27 +16,45 @@ body{
 	font-family: 'Dancing Script', cursive;
 }
 
+@media screen and (max-width: 900px) {
 .contenido {
 	margin:0;
 	padding: 0;
 	width: 100%;
 
 }
-.contenido{
-	display: -webkit-flex;
+
+.ImagenSecundaria {
 	display: flex;
-	-webkit-flex-flow: row wrap;
-	flex-flow: row wrap;
-	justify-content: center;
+	flex-direction: column;
+
+}
+.footer{
+	display: flex;
+	flex-direction: column;
+}
 
 }
 
-.contenido div{
-	box-sizing: border-box;
-	max-width: 900px;
-	text-align: right;
 
-}
+
+	.contenido{
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: row wrap;
+		flex-flow: row wrap;
+		justify-content: center;
+
+	}
+
+	.contenido div{
+		box-sizing: border-box;
+		max-width: 900px;
+		text-align: right;
+
+	}
+
+
 #cabecera{
 	background-color: #5b7989;
 	border-radius: 10px 10px 0px 0px;
@@ -98,7 +117,7 @@ nav ul li a:hover {
 			width:50%;
 			float: right;
 			margin-left: 0;
-			box-shadow: 2px -2px 20px 1px #02010a;
+
 
 
 		}
@@ -108,7 +127,7 @@ nav ul li a:hover {
 			width:50%;
 			float: left;
 			margin-right: 0;
-			box-shadow: 2px -2px 20px 1px #02010a;
+
 
 		}
 		.dcabecera, .ImagenCentral{
@@ -116,7 +135,7 @@ nav ul li a:hover {
 			flex-direction: column;
 		}
 
-		@media (min-width: 900px) {
+
 
 			.ImagenCentral {
 
@@ -138,7 +157,7 @@ nav ul li a:hover {
 			margin-left: auto;
 			margin-right: auto;
 		}
-	}
+
 
 
 	.contenido{
@@ -157,6 +176,7 @@ nav ul li a:hover {
 	.ImagenSecundaria > div {
 		width: 50%;
 		padding: 10px;
+		display: flex;
 
 	}
 
@@ -191,6 +211,7 @@ nav ul li a:hover {
 		display: -webkit-flex;
 		display: flex;
 		width: 25%;
+		padding: 10px;
 	}
 
 
