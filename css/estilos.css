@@ -21,22 +21,61 @@ body{
 	margin:0;
 	padding: 0;
 	width: 100%;
+  -webkit-column-count:1;
+  -moz-column-count:1;
+  column-count:1;
 
 }
 
 .ImagenSecundaria {
 	display: flex;
 	flex-direction: column;
+  -webkit-column-count:1;
+  -moz-column-count:1;
+  column-count:1;
+  align-items: center;
 
 }
 .footer{
 	display: flex;
 	flex-direction: column;
+  -webkit-column-count:1;
+  -moz-column-count:1;
+  column-count:1;
+  align-items: flex-start;
+}
+.Galeria1{
+  display: flex;
+  flex-direction: column;
+  -webkit-column-count:1;
+  -moz-column-count:1;
+  column-count:1;
+  align-items: center;
+}
+.Galeria2{
+  display: flex;
+  flex-direction: column;
+  -webkit-column-count:1;
+  -moz-column-count:1;
+  column-count:1;
+  align-items: center;
 }
 
+.cabecera {
+  flex-wrap: wrap;
+  }
+.menu {
+  order: 2;
+  width: 100%;
+  flex-wrap: wrap;
+
+  }
 }
 
+.menu {
 
+    display: flex;
+}
 
 	.contenido{
 		display: -webkit-flex;
@@ -54,19 +93,22 @@ body{
 
 	}
 
-
-#cabecera{
+.cabecera >ul{
+  float: right;
+  text-align: right;
+}
+.cabecera{
 	background-color: #5b7989;
 	border-radius: 10px 10px 0px 0px;
 	color: white;
 	text-shadow: 2px 2px 2px #02010a;
 
 }
+
 h1{
 	float: left;
 }
 nav a{
-	float: right;
 	color: white;
 }
 nav ul {
@@ -74,11 +116,14 @@ nav ul {
 	padding: 0;
 	list-style: none;
 	padding-right: 0px;
+
 }
 
 nav ul li {
 	display: inline-block;
 	line-height: 80px;
+  text-align: right;
+
 }
 
 nav ul li a {
@@ -143,8 +188,6 @@ nav ul li a:hover {
 			}
 			.ImagenCentral img{
 				border: 1px solid black;
-				margin-left: auto;
-				margin-right: auto;
 				display: block;
 				align-self: center;
 
@@ -204,6 +247,7 @@ nav ul li a:hover {
 		width: 100%;
 		background-color:#C6d5c5;
 		border-radius: 0px 0px 10px 10px;
+
 	}
 
 	.footer >div{
@@ -212,8 +256,13 @@ nav ul li a:hover {
 		display: flex;
 		width: 25%;
 		padding: 10px;
+    text-align: left;
 	}
-
+.header{
+		display: -ms-flex;
+		display: -webkit-flex;
+		display: flex;
+}
 
 
 
@@ -269,6 +318,9 @@ box-shadow: 2px 2px 2px 2px #82c3a6;
 .Galeria1 > div {
 	width: 33.33%;
 	padding: 10px;
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
 
 }
 .Galeria2 {
@@ -283,8 +335,9 @@ box-shadow: 2px 2px 2px 2px #82c3a6;
 .Galeria2 > div {
 	width: 33.33%;
 	padding: 10px;
-
-
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
 }
 .Imagen1 img{
 	border: 1px solid black;
