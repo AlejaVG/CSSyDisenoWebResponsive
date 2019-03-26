@@ -73,7 +73,7 @@ body{
 }
 
 .menu {
-
+  align-items: flex-end;
     display: flex;
 }
 
@@ -89,12 +89,11 @@ body{
 	.contenido div{
 		box-sizing: border-box;
 		max-width: 900px;
-		text-align: right;
 
 	}
 
 .cabecera >ul{
-  float: right;
+
   text-align: right;
 }
 .cabecera{
@@ -108,6 +107,7 @@ body{
 h1{
 	float: left;
 }
+
 nav a{
 	color: white;
 }
@@ -116,18 +116,15 @@ nav ul {
 	padding: 0;
 	list-style: none;
 	padding-right: 0px;
-
 }
 
 nav ul li {
 	display: inline-block;
 	line-height: 80px;
-  text-align: right;
-
 }
 
 nav ul li a {
-	display: block;
+	display: flex;
 	padding: 0 10px;
 	text-decoration: underline;
 }
