@@ -16,6 +16,12 @@ body{
 	font-family: 'Dancing Script', cursive;
 }
 
+nav ul {
+    float: right;
+    text-align:right;
+	width: 100%;
+	}
+
 @media screen and (max-width: 900px) {
 .contenido {
 	margin:0;
@@ -92,10 +98,7 @@ body{
 
 	}
 
-.cabecera >ul{
 
-  text-align: right;
-}
 .cabecera{
 	background-color: #5b7989;
 	border-radius: 10px 10px 0px 0px;
@@ -110,12 +113,6 @@ h1{
 
 nav a{
 	color: white;
-}
-nav ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	padding-right: 0px;
 }
 
 nav ul li {
